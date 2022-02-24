@@ -5,6 +5,12 @@
 Este proyecto implica unicamente la maquetación y diseño de un sitio de ecommerce.
 Sirve como practica para aprender más sobre css, flexbox y grid.
 
+<br>
+ <div align="center">
+    <br>
+    <img src="https://raw.githubusercontent.com/raquellvazquez/css-ecommerce/master/Screen%20Shot%202022-02-23%20at%209.40.06%20PM.png" alt="img" width="auto" height="auto" />
+    <br>
+</div>
 
 ## Importante
 
