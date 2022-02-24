@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="css/normalize.css"/>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Raleway:wght@400;700;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="css/app.css"/>
+    <title>Ecommerce - Contacto</title>
+</head>
+<body>
+    <header>
+        <h1 class="nombre-sitio">Tienda <span>Muebles</span></h1>
+    </header>
+    <div class="contenedor-navegacion">
+        <nav class="nav-principal contenedor">
+            <a href="index.html" class="enlace">Inicio</a>
+            <a href="nosotros.html" class="enlace">Nosotros</a>
+            <a href="tienda.html" class="enlace">Tienda</a>
+            <a href="blog.html" class="enlace">Blog</a>
+            <a href="galeria.html" class="enlace">Galeria</a>
+            <a href="contacto.html" class="enlace">Contacto</a>
+        </nav>
+    </div>
+    
+    <main class="contenido-principal contenedor">
+        <h2 class="text-center"> Contacto </h2>
+
+        <form class="formulario">
+            <!-- Agrupacion de campos relacionados <fieldset> -->
+            <fieldset>
+                <!-- texto que describe la agrupación <legend> -->
+                <legend>Tus datos</legend>
+                <div class="campo">
+                    <label for="nombre">Nombre:</label>
+                    <!-- value, readonly, requiered -->
+                    <input id="nombre" type="text" placeholder="Nombre" required/>
+                </div>
+                <div class="campo">
+                    <label for="asunto">Asunto:</label>
+                    <input id="asunto" type="text" placeholder="Ingresa el asunto"/>
+                </div>
+                <div class="campo">
+                    <label for="email">Email:</label>
+                    <input id="email" type="email" placeholder="email@gmail.com"/>
+                </div>
+                <div class="campo">
+                    <label for="telefono">Teléfono:</label>
+                    <input id="telefono" type="tel" placeholder="55-55-55-55-55"/>
+                </div>
+                <div class="campo">
+                    <label for="mensaje">Mensaje:</label>
+                    <textarea rows="20" cols="20">Holaß</textarea>
+                </div>
+            </fieldset>
+
+            <fieldset>
+                <legend>Pais</legend>
+                <div class="campo">
+                    <label for="pais">País:</label>
+                    <select id="pais">
+                        <!--option: disabled selected -->
+                        <option value="">--Seleccione--</option>
+                        <option value="mx">México</option>
+                        <option value="ar">Argentina</option>
+                        <option value="pr">Perú</option>
+                        <option value="co">Colombia</option>
+                    </select>
+                </div>
+            </fieldset>
+
+            <fieldset>
+                <legend>Informacion extra</legend>
+                <div class="campo">
+                    <label for="cliente">Cliente:</label>
+                    <!-- name es la propiedad que permite unir dos radio -->
+                    <input id="cliente" type="radio" name="tipo" value="cliente"/>
+                </div>
+                <div class="campo">
+                    <label for="proveedor">Proveedor:</label>
+                    <input id="proveedor" type="radio" name="tipo" value="proveedor"/>
+                </div>
+                <div class="campo">
+                    <label for="proveedor">Categoria de Interés:</label>
+                    <input list="categorias" name="categorias"/>
+                    <datalist id="categorias">
+                        <option value="Cocina">
+                        <option value="Recamaras">
+                        <option value="Oficina">
+                    </datalist>
+                </div>
+            </fieldset>
+            
+           <input type="submit" value="Enviar formulario " class="btn"> 
+        </form>
+    </main>
+    <footer class="side-footer">
+      <div class="grid-footer contenedor">
+        <div>
+            <h3>Categorias</h3>
+            <nav class="footer-menu">
+            <a href="">Cocina</a>
+            <a href="">Oficina</a>
+            <a href="">Jardin</a>
+            <a href="">Cochera</a>
+            <a href="">Dormitorios</a>
+             </nav>
+        </div>
+        <div>
+            <h3>Sobre Nosotros</h3>
+            <nav class="footer-menu">
+                <a href="">Nuestra historia</a>
+                <a href="">Misión, Visión y valores</a>
+                <a href="">Carrera</a>
+                <a href="">Politica de privacidad</a>
+                <a href="">Terminos y condiciones</a>
+           </nav>
+        </div>
+        <div>
+            <h3>Soporte</h3>
+            <nav class="footer-menu">
+                <a href="">Preguntas Frecuentes</a>
+                <a href="">Ayuda en línea</a>
+                <a href="">Confianza y seguridad</a>
+           </nav>
+        </div>
+    </div>
+        <p class="copyrigth"> Todos los derechos reservados</p>
+    </footer> 
+</body>
+</html>
